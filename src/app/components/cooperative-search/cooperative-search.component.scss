@@ -1,0 +1,45 @@
+@import '../../../scss/variables.scss';
+
+.ailos-form-container {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  @media #{ $mq-mobile } {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__btn {
+    min-width: 172px;
+    max-width: 270px;
+    @media #{ $mq-mobile } {
+      width: 100%;
+    }
+  }
+}
+
+.ailos-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  @media #{ $mq-mobile } {
+    margin-bottom: 16px;
+  }
+  &__input {
+    min-width: 270px;
+    max-width: 270px;
+    height: 34px;
+    background: $white;
+    border: 1px solid $gray-4;
+    border-radius: 2px;
+    &:focus {
+      border: 1px solid $ailos-blue;
+    }
+  }
+
+  &__label {
+    margin-bottom: 6px;
+    color: $ailos-black;
+  }
+}
+
+

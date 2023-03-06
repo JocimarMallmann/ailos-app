@@ -1,0 +1,28 @@
+@import '../../../scss/variables.scss';
+
+.ailos-content {
+  &__description {
+
+  }
+}
+.ailos-description {
+  &__title {
+    line-height: 30px;
+    color: $ailos-black-2;
+  }
+  &__text {
+    line-height: 15px;
+    color: $gray-text;
+  }
+}
+
+.ailos-info {
+  &__card {
+    min-width: 270px;
+    max-width: 270px;
+  }
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}

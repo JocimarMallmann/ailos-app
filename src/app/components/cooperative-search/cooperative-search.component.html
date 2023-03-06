@@ -1,0 +1,34 @@
+<div>
+  <form
+    (ngSubmit)="search()"
+    #cooperativeSearchForm="ngForm">
+    <!-- <app-input-text></app-input-text> -->
+    <div class="ailos-form-container">
+      <div class="ailos-form-group">
+        <label class="ailos-form-group__label">CPF</label>
+        <input
+          class="ailos-form-group__input"
+          placeholder="Nome do usuário"
+          [(ngModel)]="cpf"
+          name="cpf"
+          #inputCpf="ngModel"
+          required
+        />
+        <app-message
+          *ngIf="inputCpf.invalid && inputCpf.touched"
+          message="CPF inválido"
+        ></app-message>
+      </div>
+
+      <div class="ailos-form-container__btn">
+        <app-button
+          type="submit"
+          text="Consultar por CPF"
+          [loading]="loading"
+          [disabled]="disabledButton">
+        </app-button>
+      </div>
+
+    </div>
+  </form>
+</div>

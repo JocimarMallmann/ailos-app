@@ -1,0 +1,14 @@
+@import '../../../../scss/variables.scss';
+
+
+.ailos-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background: $white;
+  border-radius: 2px;
+
+  @extend %default-shadow;
+}

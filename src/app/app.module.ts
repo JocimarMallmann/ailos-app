@@ -1,3 +1,6 @@
+import { ScreensModule } from './screens/screens.module';
+import { ErrorsModule } from './errors/errors.module';
+import { CoreModule } from './core/core.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,6 +13,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    CoreModule,
+    ScreensModule,
+    ErrorsModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,0 +1,42 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/typography.scss';
+
+.ailos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: $white;
+  min-height: 89px;
+  @media #{ $mq-mobile } {
+    flex-direction: column;
+  }
+
+  &__title {
+    line-height: 32px;
+    color: $ailos-black-2;
+  }
+
+  &__breadcrumb {
+    line-height: 18px;
+    color: $gray;
+  }
+
+  &__items-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    @media #{ $mq-mobile } {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__items-right {
+    display: flex;
+  }
+}
+
+.mr-16 {
+  margin-right: 16px;
+}

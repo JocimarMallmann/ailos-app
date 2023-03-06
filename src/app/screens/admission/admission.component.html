@@ -1,0 +1,24 @@
+<section class="ailos-content">
+  <!-- Sem necessidade do router-outlet -->
+  <div class="row ailos-content__description mb-16">
+    <h3 class="ailos-description__title ailos-title-page">Informe o CPF do futuro cooperado (a)</h3>
+    <p class="ailos-description__text ailos-subtitle">
+      Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.
+    </p>
+    <p class="ailos-description__text ailos-subtitle">
+      Digite apenas os números (sem pontos ou traços).
+    </p>
+  </div>
+
+  <div>
+    <app-cooperative-search></app-cooperative-search>
+  </div>
+
+  <section class="ailos-info">
+
+    <div class="ailos-info__card">
+      <app-card [cardStyle]="{'padding': '20px'}"></app-card>
+    </div>
+
+  </section>
+</section>

@@ -1,0 +1,60 @@
+@import './variables.scss';
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+// Variables
+$default-font: 'Open Sans', sans-serif;
+$exo-font: 'Exo 2', sans-serif;
+
+// Default font
+.ailos-typography--font-family {
+  font-family: $default-font;
+}
+
+// Header
+.ailos-title-page {
+  font-family: $default-font;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.ailos-exo-font-title {
+  font-family: $exo-font;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+// Body
+.ailos-body-12 {
+  font-family: $default-font;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.ailos-body-dafault {
+  font-family: $default-font;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ailos-subtitle {
+  font-family: $default-font;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.ailos-error {
+  font-family: $default-font;
+  font-size: 14px;
+  font-weight: 600;
+  color: $critic-red;
+}
+
+.ailos-medium {
+  font-family: $default-font;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+// Labels
+

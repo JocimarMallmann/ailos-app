@@ -1,0 +1,43 @@
+
+// --- Colors ---
+
+$white: #fff;
+$black: #000;
+
+// Preto ailos
+$ailos-black: #040F14;
+$ailos-black-2: #101213;
+
+
+
+// Cor primária
+$primary-color: rgb(22, 92, 125);
+
+// Cor secundária
+$secondary-color: rgb(255, 163, 0);
+
+// Complementares
+$light-blue: rgb(0, 158, 208);
+$intermediate-blue: rgb(0, 125, 138);
+
+// Escala de criticidade
+$critic-red: rgb(193, 48, 24);
+
+// Escala de cinza
+$gray: #787878;
+$gray-text: #4F575E;
+$gray-1: #E7EEF1;
+$gray-4: #889499;
+
+// Variações tonais
+$ailos-blue: #165C7D;
+$ailos-blue-40: rgb(162, 190, 203);
+
+
+// Media queries
+$mq-mobile: '(max-width: 768px)';
+
+// Sombras
+%default-shadow {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}

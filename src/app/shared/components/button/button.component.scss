@@ -1,0 +1,31 @@
+@import '../../../../scss/variables.scss';
+
+@mixin button-style($background, $color) {
+  background: $background;
+  color: $color;
+  // &:hover {
+  //   background: grayscale($background);
+  // }
+}
+
+.btn {
+  max-width: 320px;
+  width: 100%;
+  padding: 6px 25px;
+  height: 34px;
+  background: none;
+  border: 0;
+  border-radius: 2px;
+
+  &.btn-disabled {
+    background: $ailos-blue-40 !important;
+  }
+
+  &.btn-primary {
+    @include button-style($primary-color, $white);
+    // @extend %sombra-padrao;
+  }
+  &.btn-secondary {
+    @include button-style($secondary-color, $black);
+  }
+}
