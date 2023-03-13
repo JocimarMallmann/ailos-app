@@ -1,5 +1,11 @@
 @import '../../../scss/variables.scss';
 
+.ailos-stepper {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0px 28px;
+}
+
 .ailos-description {
   &__title {
     line-height: 30px;
