@@ -7,7 +7,7 @@ import { AdmissionComponent } from './admission.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'admission',
     component: AdmissionComponent
   },
 ];

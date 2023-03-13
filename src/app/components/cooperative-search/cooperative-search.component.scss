@@ -10,8 +10,9 @@
   }
   &__btn {
     min-width: 172px;
-    max-width: 270px;
+    max-width: 172px;
     @media #{ $mq-mobile } {
+      min-width: 102px;
       width: 100%;
     }
   }
@@ -21,25 +22,11 @@
   display: flex;
   flex-direction: column;
   margin-right: 16px;
+  min-width: 270px;
+  max-width: 270px;
   @media #{ $mq-mobile } {
+    min-width: 100px;
+    width: 100%;
     margin-bottom: 16px;
   }
-  &__input {
-    min-width: 270px;
-    max-width: 270px;
-    height: 34px;
-    background: $white;
-    border: 1px solid $gray-4;
-    border-radius: 2px;
-    &:focus {
-      border: 1px solid $ailos-blue;
-    }
-  }
-
-  &__label {
-    margin-bottom: 6px;
-    color: $ailos-black;
-  }
 }
-
-

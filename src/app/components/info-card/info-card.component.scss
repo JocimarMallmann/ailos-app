@@ -1,0 +1,15 @@
+@import '../../../scss/variables.scss';
+
+.ailos-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  &__subtitle {
+    color: $gray;
+    line-height: 16px;
+  }
+  &__title {
+    color: $ailos-black;
+    line-height: 19px;
+  }
+}

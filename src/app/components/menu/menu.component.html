@@ -1,3 +1,25 @@
-<p>
-  menu works!
-</p>
+<nav class="ailos-navigation"
+  [ngClass]="{'ailos-navigation__open': openMenu}">
+  <div class="ailos-navigation__logo">
+    LOGO
+  </div>
+
+  <div class="ailos-navigation__btn">
+    <app-round-button
+      [roundButton]="{
+        iconPrefix: 'fas',
+        iconName: 'bars',
+        iconColor: '#739DB1',
+        iconSize: 'xl'
+      }"
+      (clickEvent)="toggleMenu()">
+    </app-round-button>
+  </div>
+
+  <div class="ailos-navigation__nav-list">
+    <app-nav-list
+      [itemsMenu]="itemsMenu"
+      [showLabel]="openMenu">
+    </app-nav-list>
+  </div>
+</nav>

@@ -1,0 +1,16 @@
+<button
+  class="ailos-round-button"
+  (click)="click()">
+  <div>
+    <div *ngIf="roundButton.iconPrefix && roundButton.iconName">
+      <fa-icon
+        [icon]="[roundButton.iconPrefix, roundButton.iconName]"
+        [style.color]="roundButton.iconColor"
+        [size]="roundButton.iconSize">
+      </fa-icon>
+    </div>
+    <div *ngIf="roundButton.label">
+      {{ roundButton.label }}
+    </div>
+  </div>
+</button>

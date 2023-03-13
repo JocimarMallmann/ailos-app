@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DataListComponent } from './data-list.component';
+import { RoundButtonComponent } from './round-button.component';
 import { IconsModule } from 'src/app/icons/icons.module';
 
-
-
 @NgModule({
-  declarations: [
-    DataListComponent
-  ],
   imports: [
     CommonModule,
     IconsModule
   ],
+  declarations: [
+    RoundButtonComponent
+  ],
   exports: [
-    DataListComponent
+    RoundButtonComponent
   ]
 })
-export class DataListModule { }
+export class RoundButtonModule { }

@@ -1,1 +1,17 @@
-<p>info-card works!</p>
+<app-card
+  [cardStyle]="{'padding': '20px'}">
+  <div
+    class="ailos-header"
+    *ngIf="title">
+    <p class="ailos-section-title ailos-header__title">{{ title }}</p>
+    <span
+      *ngIf="subtitle"
+      class="ailos-subtitle ailos-header__subtitle">
+      {{ subtitle }}
+    </span>
+  </div>
+  <app-data-list
+    [list]="dataList"
+    [spacingBetween]="'16px'">
+  </app-data-list>
+</app-card>

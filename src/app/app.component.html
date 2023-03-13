@@ -1,12 +1,18 @@
 <div class="ailos-main ailos-typography--font-family">
   <div>
-    <app-header></app-header>
+    <app-menu>
+    </app-menu>
   </div>
-  <div class="ailos-container container-fluid">
-      <main>
-          <section>
-              <router-outlet></router-outlet>
-          </section>
-      </main>
+  <div class="ailos-page">
+    <div>
+      <app-header></app-header>
+    </div>
+    <div class="ailos-page__content">
+        <main>
+            <section>
+                <router-outlet></router-outlet>
+            </section>
+        </main>
+    </div>
   </div>
 </div>

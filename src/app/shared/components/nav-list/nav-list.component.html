@@ -1,0 +1,24 @@
+<ul class="ailos-container-list"
+  [style.alignItems]="showLabel ? 'flex-start' : 'center'">
+  <li
+    class="ailos-list"
+    *ngFor="let item of itemsMenu">
+    <a
+      class="ailos-list__a"
+      [routerLink]="[item.routerLink]">
+      <div
+        class="ailos-list__icon"
+        *ngIf="item.iconPrefix && item.iconName">
+        <fa-icon
+          [icon]="[item.iconPrefix, item.iconName]"
+          [style.color]="item.iconColor"
+          [size]="item.iconSize">
+        </fa-icon>
+      </div>
+      <div class="ailos-list__label"
+        [ngClass]="{'teste': !showLabel}"><!--*ngIf="showLabel"-->
+        {{ item.label }}
+      </div>
+    </a>
+  </li>
+</ul>

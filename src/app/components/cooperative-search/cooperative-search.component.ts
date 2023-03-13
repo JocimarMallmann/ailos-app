@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-cooperative-search',
@@ -7,20 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CooperativeSearchComponent implements OnInit {
 
+  public cooperativeSearchForm: FormGroup;
+
   public cpf: string = '';
   public loading = false;
   public disabledButton = false;
 
-  constructor() { }
+  @Output() public eventSearch = new EventEmitter<string>();
 
-  ngOnInit() {
+  constructor(
+    private formBuilder: FormBuilder
+  ) { }
+
+  ngOnInit(): void {
+    this.cooperativeSearchForm = this.formBuilder.group({
+      cpf: [
+        '', [ Validators.required ]
+      ]
+    });
   }
 
 
   search(): void {
     this.loading = true;
-    console.log();
-    console.log('search: ', this.cpf);
+    const values = this.cooperativeSearchForm.getRawValue();
+    this.eventSearch.emit(values.cpf);
     this.loading = false;
   }
 }

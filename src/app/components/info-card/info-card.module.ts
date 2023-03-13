@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { InfoCardComponent } from './info-card.component';
+import { ComponentsModule } from 'src/app/shared/components/components.module';
 
 
 
@@ -9,7 +11,11 @@ import { InfoCardComponent } from './info-card.component';
     InfoCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
+  ],
+  exports: [
+    InfoCardComponent
   ]
 })
 export class InfoCardModule { }

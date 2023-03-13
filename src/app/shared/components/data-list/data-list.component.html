@@ -1,1 +1,28 @@
-<p>data-list works!</p>
+<ul>
+  <li
+    class="ailos-list"
+    *ngFor="let item of list; let i = index;"
+    [style.marginBottom]="spacingBetweenLIElement(i)">
+    <div class="ailos-list__container">
+      <div
+        *ngIf="item.iconPrefix && item.iconName"
+        class="ailos-list__container-icon">
+        <fa-icon
+          [icon]="[ item.iconPrefix, item.iconName]"
+          [style.color]="item.iconColor">
+        </fa-icon>
+      </div>
+      <div
+        class="ailos-list__container-text">
+        <div
+          *ngIf="item.title"
+          class="container-text__subtitle ailos-subtitle">
+          {{ item.title }}
+        </div>
+        <div class="container-text__text ailos-body-default">
+          {{ item.text }}
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>

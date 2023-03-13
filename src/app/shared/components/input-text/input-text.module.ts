@@ -1,3 +1,5 @@
+import { NgxMaskModule } from 'ngx-mask';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputTextComponent } from './input-text.component';
@@ -9,7 +11,10 @@ import { InputTextComponent } from './input-text.component';
     InputTextComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxMaskModule
   ],
   exports: [
     InputTextComponent

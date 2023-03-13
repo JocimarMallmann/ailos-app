@@ -1,0 +1,30 @@
+@import '../../../../scss//variables.scss';
+
+.ailos-container-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ailos-list {
+  margin-bottom: 16px;
+  width: 100%;
+  &__a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: $white;
+  }
+  &__icon {
+    padding: 8px;
+  }
+  &__label {
+    flex-grow: 1;
+    padding: 8px;
+  }
+}
+
+.teste {
+  display: none;
+}

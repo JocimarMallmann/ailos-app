@@ -10,15 +10,31 @@
     </p>
   </div>
 
-  <div>
-    <app-cooperative-search></app-cooperative-search>
+  <div class="ailos-search">
+    <app-cooperative-search
+      (eventSearch)="consultCpf($event)">
+    </app-cooperative-search>
+    <app-message
+      *ngIf="notFound"
+      [error]="notFound"
+      message="CPF não encontrado"
+    ></app-message>
+    <!-- TODO -->
+    <!-- NÃO DEU TEMPO DE FAZER UM COMPONENTE ESPECÍFICO PARA APRESENTAÇÃO DE TOASTS NA TELA PARA O USUÁRIO -->
   </div>
 
   <section class="ailos-info">
 
-    <div class="ailos-info__card">
-      <app-card [cardStyle]="{'padding': '20px'}"></app-card>
+    <div class="ailos-info__card"
+      *ngIf="cpf">
+      <app-info-card
+        title="Situação cadastral do CPF"
+        subtitle="Consulta na Receita Federal"
+        [dataList]="dataList">
+      </app-info-card>
     </div>
+
+    <div class="ailos-subtitle color-dica">Busque pelo cpf "20466801890", existe no mock de dados!</div>
 
   </section>
 </section>

@@ -1,1 +1,5 @@
-<small class="ailos-message">{{ message }}</small>
+<small
+  class="ailos-message"
+  [ngClass]="{'ailos-error': error}">
+  {{ message }}
+</small>

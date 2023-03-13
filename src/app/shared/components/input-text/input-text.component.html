@@ -1,1 +1,19 @@
-<p>input-text works!</p>
+<div>
+  <div class="ailos-label-container">
+    <label
+      [attr.for]="id"
+      class="ailos-label ailos-medium">
+      {{ label }}
+    </label>
+  </div>
+  <input
+    [id]="id"
+    [type]="type"
+    class="ailos-input"
+    [placeholder]="placeholder"
+    [required]="required"
+    [readonly]="!!isReadOnly"
+    [formControl]="control"
+    [mask]="'000.000.000-00'"
+  />
+</div>

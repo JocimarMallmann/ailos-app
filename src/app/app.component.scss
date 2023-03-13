@@ -3,8 +3,19 @@
 .ailos-main {
   height: 100%;
   background: $gray-1;
+  display: flex;
 }
 
-.ailos-container {
-  padding: 24px;
+.ailos-page {
+  flex-grow: 1;
+  margin-left: 102px;
+  @media #{ $mq-mobile } {
+    margin-left: 62px;
+  }
+  &__content {
+    padding: 24px;
+    @media #{ $mq-mobile } {
+      padding: 8px;
+    }
+  }
 }

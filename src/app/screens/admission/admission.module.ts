@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdmissionComponent } from './admission.component';
 import { AdmissionRountingModule } from './admission-rounting.module';
+import { InfoCardModule } from 'src/app/components/info-card/info-card.module';
 
 
 
@@ -15,6 +16,7 @@ import { AdmissionRountingModule } from './admission-rounting.module';
     CommonModule,
     CooperativeSearchModule,
     ComponentsModule,
+    InfoCardModule,
     AdmissionRountingModule
   ],
   exports: [

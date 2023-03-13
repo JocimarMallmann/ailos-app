@@ -6,13 +6,33 @@ import {
 import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 
 // Icons imports
-import { faCoffee, faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCircleCheck,
+  faCoffee,
+  faMagnifyingGlass,
+  faSpinner,
+  faUser,
+  faBars,
+  faSearch,
+  faStar,
+  faCommentDots,
+  faSliders,
+  faBuildingColumns
+} from '@fortawesome/free-solid-svg-icons';
 
 
 const ICON: IconDefinition[] = [
   faCoffee,
   faMagnifyingGlass,
-  faSpinner
+  faSpinner,
+  faUser,
+  faCircleCheck,
+  faBars,
+  faSearch,
+  faStar,
+  faCommentDots,
+  faSliders,
+  faBuildingColumns
 ];
 
 
